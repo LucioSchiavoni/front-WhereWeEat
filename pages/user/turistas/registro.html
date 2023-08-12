@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where We Eat</title>
+    <link rel="icon" type="image/svg+xml" href="https://images-breno.s3.sa-east-1.amazonaws.com/logoproducto+(2).png" />
+    <meta name="description" content="Descubre sabores locales y disfruta de los mejores restaurantes para turistas." />
+    <!-- Etiqueta canonical para evitar contenido duplicado -->
+    <link rel="canonical" href="#" />
+    <meta name="author" content="Enigma Engineers" />
+
+    <!-- Scripts de estilos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../../styles/style.css">
+</head>
+
+
+<body class="fondo">
+
+    <!-- NavBar -->
+    <div class='p-4 shadow-xl flex backdrop-blur-xl '>
+        <a href="../../../index.html">
+            <img src="https://images-breno.s3.sa-east-1.amazonaws.com/logoproducto+(2).png" alt="logo"
+                class='w-14 rounded-full' />
+        </a>
+        <div class="absolute right-24 py-4">
+            <a href="../restauranes/registroRestauante.html" class="bg-red-900 p-3 rounded-lg text-white">
+                Registrarse como restaurante
+            </a>
+        </div>
+    </div>
+    <!-- NavBar -->
+
+    <!-- Formulario de registro turista-->
+    <form id="form" method="POST" class="mt-64 p-24 backdrop-blur-xl shadow-xl rounded-xl w-3/12 m-auto"
+        enctype="multipart/form-data">
+        <h2 class="text-center text-3xl text-red-800 mb-5 font-mono">Registrate</h2>
+        <div class="flex flex-col  mb-5">
+            <label for="alias">Id de usuario</label>
+            <input type="text" name="idUsuario" id="idUsuario" placeholder="Alias"
+                class="px-4 py-2 rounded placeholder:italic bg-gray-300 border-red-800 border focus:outline-none focus:border-red-800 focus:ring-red-800 focus:ring-1">
+        </div>
+        <div class="flex flex-col  mb-5">
+            <label for="alias">Alias</label>
+            <input type="text" name="alias" id="alias" placeholder="Alias"
+                class="px-4 py-2 rounded placeholder:italic bg-gray-300 border-red-800 border focus:outline-none focus:border-red-800 focus:ring-red-800 focus:ring-1">
+        </div>
+        <div class="flex flex-col  mb-5">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email"
+                class="px-4 py-2 rounded placeholder:italic bg-gray-300 border-red-800 border focus:outline-none focus:border-red-800 focus:ring-red-800 focus:ring-1">
+        </div>
+        <div class="flex flex-col  mb-5">
+            <label for="password">Contraseña</label>
+            <input type="password" name="contrasenia" id="contrasenia" placeholder="Contraseña"
+                class="px-4 py-2 rounded placeholder:italic bg-gray-300 border-red-800 border focus:outline-none focus:border-red-800 focus:ring-red-800 focus:ring-1 ">
+        </div>
+        <div class="flex flex-col  mb-5">
+            <label for="">Rol</label>
+            <input type="text" name="rol" id="rol" placeholder="rol"
+                class="px-4 py-2 rounded placeholder:italic bg-gray-300 border-red-800 border focus:outline-none focus:border-red-800 focus:ring-red-800 focus:ring-1">
+        </div>
+        <div class="flex flex-col  mb-5">
+            <label for="">Nacionalidad</label>
+            <input type="text" name="nacionalidad" id="nacionalidad" placeholder="Nacionalidad"
+                class="px-4 py-2 rounded placeholder:italic bg-gray-300 border-red-800 border focus:outline-none focus:border-red-800 focus:ring-red-800 focus:ring-1">
+        </div>
+        <div class="flex flex-col mb-5">
+            <label for="" class="">Foto de perfil</label>
+            <input type="text" name="urlImg" id="urlImg" class="px-4 py-2 rounded placeholder:italic bg-gray-300 border-red-800 border focus:outline-none focus:border-red-800 focus:ring-red-800 focus:ring-1">
+        </div>
+
+        <button type="submit"
+            class="text-white bg-gradient-to-r from-red-900 via-red-800 to-red-700 hover:bg-gradient-to-br rounded-lg px-5 py-2.5">Registrarse</button>
+    </form>
+
+
+    <!-- Script para la logica del formulario Turista -->
+    <script src="../../../js/api/post/formTuristas.js"></script>
+</body>
+
+</html>

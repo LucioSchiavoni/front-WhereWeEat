@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where We Eat</title>
+    <link rel="icon" type="image/svg+xml" href="https://images-breno.s3.sa-east-1.amazonaws.com/logoproducto+(2).png" />
+    <meta name="description" content="Descubre sabores locales y disfruta de los mejores restaurantes para turistas." />
+    <!-- Etiqueta canonical para evitar contenido duplicado -->
+    <link rel="canonical" href="#" />
+    <meta name="author" content="Enigma Engineers" />
+
+    <!-- Scripts de estilos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body class="fondo">
+
+        <!-- NavBar -->
+        <div class='p-4 shadow-xl flex backdrop-blur-xl '>
+            <a href="./home.html">
+            <img src="https://images-breno.s3.sa-east-1.amazonaws.com/logoproducto+(2).png" alt="logo"
+                class='w-14 rounded-full' />
+          </a>
+        </div>
+        <!-- NavBar -->
+
+
+<div class=" bg-white p-4 w-7/12 m-auto  mt-5 pb-24 rounded-lg shadow-xl shadow-gray-800">
+
+    <h2 class="text-center text-5xl text-red-800 p-8 font-mono font-bold">Where We Eat</h2>
+<!--Div del mapa de google -->
+    <div class="space-y-14 flex justify-center items-center">
+      <div id="map" class="h-96  w-6/12 m-auto rounded-lg shadow-xl shadow-gray-800 hover:scale-125 transition delay-150 duration-300"></div>
+    </div>
+    
+    <div class="flex items-center justify-center gap-6  mt-8">
+
+        <div 
+            class="card hover:scale-110 transition-all delay-150 duration-300 shadow-xl p-14 h-44 w-96 shadow-xl shadow-gray-800  text-4xl text-white bg-white rounded-lg bg-[url(https://c4.wallpaperflare.com/wallpaper/933/196/941/cocina-comida-india-tipica-wallpaper-preview.jpg)] card-title bg-">
+
+            <a href="../user/restauranes//tiposRestaurantes.html"> <p>Tipos de restaurantes</p></a>
+        </div>
+        <div
+            class="card hover:scale-110 transition-all delay-150 duration-300 p-14 h-44 w-96 text-4xl shadow-xl shadow-gray-800   card-title text-white rounded-lg bg-[url(https://www.tapasmagazine.es/wp-content/uploads/2020/08/pexels-kaboompics-com-6267.jpg)] bg-cover  ">
+            <a href="../user/restauranes/mejoresRestaurantes.html"> <p>Top 10</p></a>
+        </div>
+        
+        <div
+            class="card hover:scale-110 transition-all delay-150 duration-300 shadow-xl p-14 h-44 w-96 text-4xl shadow-xl shadow-gray-800 rounded-lg text-white bg-white bg-[url(https://img.freepik.com/premium-photo/hand-young-waiter-denim-apron-holding-pencil-page-notepad-while-writing-down-order-client-background-interior_274679-11655.jpg?w=2000)] bg-cover card-title ">
+            <a href="../resenias/resenias.html"> <p>Tus reseñas</p></a>
+        </div>
+       
+
+    </div>
+    <div class="w-5/12 m-auto mt-10">
+<form>
+   
+    <div class="relative">
+        <div class="absolute inset-y-0 left-0 flex items-center pl-3 ">
+
+            <svg class="w-4 h-4  " aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="none" viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+            </svg>
+
+        </div>
+        <input type="search" 
+            class="block w-full p-4 pl-10 text-gray-900 border border-red-800 rounded-lg      focus:ring-red-800 focus:outline-none focus:ring-1"
+            placeholder="Busca tu restaurante..." id="buscar" required>
+
+        <button type="submit"
+            class="text-white absolute right-2.5 bottom-3 px-3 py-1 rounded-lg bg-red-700 ">Buscar</button>
+    </div>
+</form>
+</div>
+<div class=" w-8/12 p-8 h-24 mt-5 m-auto bg-white rounded-lg shadow-gray-800 shadow-xl">
+<p>Restaurantes que trae el back</p>
+</div>
+    <script src="../../js/googleMaps/map.js"></script>
+<script 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVDKTeRT0KPW89nJ4Jma7c7YddwuUzV44&callback=initMap"></script>
+</body>
+</html>

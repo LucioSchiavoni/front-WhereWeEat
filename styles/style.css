@@ -1,0 +1,15 @@
+
+body{
+background-image: url(https://img.freepik.com/premium-vector/chicken-dish-top-view-with-wooden-pattern-background-chicken-meat-collection-chicken-food-template_761765-41.jpg?w=2000);
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+
+}
+
+.form-input{
+    padding: 4rem;
+    border-radius: 2rem;
+    background-color: azure;
+    
+}
